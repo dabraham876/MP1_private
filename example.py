@@ -5,7 +5,7 @@ def tokens_lowercase(doc):
     #lowercases, removes words with less than 2 and more than 5  characters
     #performs stemming and creates trigrams (name the final call to ana.analyze as "trigrams")
      tok = metapy.analyzers.ICUTokenizer(suppress_tags=True)
-    #lowercases, removes words with less than 2 and more than 5  characters
+    #lowercases, removes words with less than 2 and more than 5  charactersl
     lowercase_filter = metapy.analyzers.LowercaseFilter(tok)
     length_filter = metapy.analyzers.LengthFilter(lowercase_filter, min=2, max=5)
     #performs stemming and creates trigrams (name the final call to ana.analyze as "trigrams")
